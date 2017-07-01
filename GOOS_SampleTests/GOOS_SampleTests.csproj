@@ -181,7 +181,6 @@
     </None>
     <None Include="features\BudgetController.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>BudgetController.feature.cs</LastGenOutput>
     </None>
     <None Include="features\BudgetCreate.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
