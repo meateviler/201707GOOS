@@ -1,4 +1,4 @@
-﻿
+﻿@CleanBudgets
 Feature: BudgetController
 
 Scenario: Add a budget record

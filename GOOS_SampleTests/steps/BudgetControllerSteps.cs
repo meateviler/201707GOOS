@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Web.Mvc;
 using FluentAssertions;
 using GOOS_Sample.Controllers;
@@ -15,19 +14,13 @@ namespace GOOS_SampleTests
 	{
 		private BudgetController _budgetController;
 
-		[BeforeScenario()]
-		public void BeforeScenario()
-		{
-			this._budgetController = new BudgetController();
-		}
-
 		[When(@"add a budget")]
 		public void WhenAddABudget(Table table)
 		{
 			var model = table.CreateInstance<BudgetAddViewModel>();
-			var result = this._budgetController.Add(model);
+			var result = _budgetController.Add(model);
 
-			ScenarioContext.Current.Set<ActionResult>(result);
+			ScenarioContext.Current.Set(result);
 		}
 
 		[Then(@"ViewBag should have a message for adding successfully")]

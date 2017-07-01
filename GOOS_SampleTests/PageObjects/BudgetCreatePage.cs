@@ -1,5 +1,4 @@
-﻿using System;
-using FluentAutomation;
+﻿using FluentAutomation;
 using GOOS_SampleTests.PageObjects;
 
 namespace GOOS_SampleTests.steps
@@ -9,7 +8,7 @@ namespace GOOS_SampleTests.steps
 		public BudgetCreatePage(FluentTest test)
 			: base(test)
 		{
-			this.Url = string.Format("{0}/budget/add", PageContext.Domain);
+			Url = string.Format("{0}/budget/add", PageContext.Domain);
 		}
 
 		public BudgetCreatePage Amount(int amount)
